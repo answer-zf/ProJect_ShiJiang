@@ -9,13 +9,13 @@ Vue.component("float-bot", {
         '                  <a href="contact_us.html" class="d-block d-sm-none d-flex justify-content-between align-items-center w-100 px-2">\n' +
         '                      <div class="d-flex align-items-center"> \n' +
         '                          <img src="img/icon1.png"></img>\n' +
-        '                          <h5 class="mb-0 color-w">\n' +
+        '                          <h5 class="mb-0 color-w h6">\n' +
         '                              &nbsp;加盟热线：400-8697-698\n' +
         '                          </h5>\n' +
         '                      </div>\n' +
         '                      <div class="d-flex align-items-center">\n' +
         '                          <img src="img/icon2.png"></img>\n' +
-        '                          <h5 class="mb-0 color-w">立即预约</h5>\n' +
+        '                          <h5 class="mb-0 color-w h6">立即预约</h5>\n' +
         '                      </div>\n' +
         '                  </a>\n' +
         '              </div>\n' +
@@ -30,7 +30,7 @@ Vue.component("float-bot", {
         '                          <input type="text" class="form-control" id="bottom_float_phone" placeholder="您的手机号" />\n' +
         '                      </div>\n' +
         '                      <div class="col-lg-2 index_md-6 align-self-center">\n' +
-        '                          <button type="button" onclick="submitPhone()" class="btn btn-warning">\n' +
+        '                          <button type="button" onclick="submitPhone()" class="btn bg-sub color-w-low">\n' +
         '                              在线预约\n' +
         '                          </button>\n' +
         '                      </div>\n' +

@@ -1,8 +1,8 @@
 <!--
 * @Author: answer-zf
-* @Date:   2019-08-26 17:00:09
+* @Date:   2019-08-26 08:45:51
 * @Last Modified by:   answer-zf
-* @Last Modified time: 2019-08-29 17:47:18
+* @Last Modified time: 2019-09-30 17:21:47
 * @E-mail: 657829956@qq.com
 -->
 <!DOCTYPE html>
@@ -18,11 +18,10 @@
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>大米君--快餐有品__生活有质</title>
+    <title>食将</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <!-- bootstrap4.0 -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-icon.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -35,7 +34,7 @@
     <nav class="navbar navbar-expand-md navbar-zf fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand d-block d-sm-none" href="#"></a>
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list">
                 <span class="navbar-toggler-icon"></span>
@@ -52,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-center" href="food.html">特色菜品</a>
                     </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link text-center zf-nav-brand" href="index.html"></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-center active" href="news.html">新闻资讯</a>
                     </li>
@@ -66,75 +68,123 @@
         </div>
     </nav>
     <!-- page-banner -->
-    <section><img src="img/news-banner.jpg" alt="" class="w-100 mt-80"></section>
-    <!-- part2 -->
-    <section class="pt-5 bg-p pb-5">
+    <section>
+        <img src="img/news-banner.jpg" alt="" class="w-100 mt-80">
+    </section>
+    
+    <section class="py-5 news-page">
         <div class="container py-3">
-            <div class="row pb-5">
+            <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="img/newst.png" alt="" class="mw-100">
+                    <img src="img/news_title.png" class="mw-100">
+                </div>
+
+            </div>
+            <div class="row my-5">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a class="btn bg-sub mr-4 color-w" href="news.html">公司动态</a>
+                    <a class="btn bg-t color-m border-color-sub" href="news.html">行业新闻</a>
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <a href="#">
-                        <div class="btn bg-m mr-4 color-p">公司动态</div>
-                    </a>
-                    <a href="#">
-                        <div class="btn bg-t color-m bg-pink">行业新闻</div>
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
+                        </div>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/news.jpg" class="w-100">
-                </div>
-                <div class="col-md-6">
-                    <a href="news_article.html" class="border-bottom d-block pb-3 bdc-mM pt-3">
-                        <div class="top d-flex mb-2">
-                            <h4 class="color-m mr-4 ifont">2019.8.25</h4>
-                            <h4 class="color-m ifont">- 大米君引领小碗菜新市场</h4>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
                         </div>
-                        <span class="color-mM ls-1 font-weight-bolder">大米君砂锅饭和黄焖鸡米饭的制作是差不多的，鸡肉的营养价值是非常好的，现在的餐饮中很多方面都会到鸡肉，它对人们而说，也是非常健康的</span>
-                    </a>
-                    <a href="news_article.html" class="border-bottom d-block pb-3 bdc-mM pt-3">
-                        <div class="top d-flex mb-2">
-                            <h4 class="color-m mr-4 ifont">2019.8.25</h4>
-                            <h4 class="color-m ifont">- 大米君引领小碗菜新市场</h4>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
                         </div>
-                        <span class="color-mM ls-1 font-weight-bolder">大米君砂锅饭和黄焖鸡米饭的制作是差不多的，鸡肉的营养价值是非常好的，现在的餐饮中很多方面都会到鸡肉，它对人们而说，也是非常健康的</span>
                     </a>
-                    <a href="news_article.html" class="border-bottom d-block pb-3 bdc-mM pt-3">
-                        <div class="top d-flex mb-2">
-                            <h4 class="color-m mr-4 ifont">2019.8.25</h4>
-                            <h4 class="color-m ifont">- 大米君引领小碗菜新市场</h4>
-                        </div>
-                        <span class="color-mM ls-1 font-weight-bolder">大米君砂锅饭和黄焖鸡米饭的制作是差不多的，鸡肉的营养价值是非常好的，现在的餐饮中很多方面都会到鸡肉，它对人们而说，也是非常健康的</span>
-                    </a>
-                    <a href="news_article.html" class="border-bottom d-block pb-3 bdc-mM pt-3">
-                        <div class="top d-flex mb-2">
-                            <h4 class="color-m mr-4 ifont">2019.8.25</h4>
-                            <h4 class="color-m ifont">- 大米君引领小碗菜新市场</h4>
-                        </div>
-                        <span class="color-mM ls-1 font-weight-bolder">大米君砂锅饭和黄焖鸡米饭的制作是差不多的，鸡肉的营养价值是非常好的，现在的餐饮中很多方面都会到鸡肉，它对人们而说，也是非常健康的</span>
-                    </a>
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center mt-5">
-                            <li class="page-item">
-                                <a class="page-link color-m display-n px-3" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link color-m display-n px-3" href="#">1</a></li>
-                            <li class="page-item">
-                                <a class="page-link color-m display-n px-3" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
+                        </div>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
+                        </div>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
+                        </div>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="news_article.html" class="d-flex news_part_content p-3">
+                        <div class="news-img">
+                            <img src="img/news-img.jpg">
+                        </div>
+                        <div class="news-text px-4">
+                            <h4 class="color-b-d mt-1 ls-3">食将可满足你的各种味蕾需求，用心与专注。</h4>
+                            <span class="color-b d-block my-3 ls-3 lh-2">食将精忠报国，只做市场更多消费者热爱的中餐，化繁为简，去除传统，品牌冷门的韩、日料理，降低损耗与成本，一心专注更擅长的领域。</span>
+                            <p class="mb-0 color-b">来源：公司动态&nbsp;&nbsp;&nbsp;&nbsp;日期：2019-08-12</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link color-m display-n px-3" href="#" aria-label="Previous">
+                            <span aria-hidden="true" class="color-m">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link color-m display-n px-3" href="#">1</a></li>
+                    <li class="page-item">
+                        <a class="page-link color-m display-n px-3" href="#" aria-label="Next">
+                            <span aria-hidden="true" class="color-m">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
     <div id="footer-zf">
@@ -142,7 +192,6 @@
         <float-bot></float-bot>
     </div>
     <script src="js/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/2.2.2Vue.min.js"></script>
     <script src="js/zf-vue-main.js"></script>

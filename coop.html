@@ -1,15 +1,8 @@
 <!--
 * @Author: answer-zf
-* @Date:   2019-08-29 16:43:50
+* @Date:   2019-08-26 08:45:51
 * @Last Modified by:   answer-zf
-* @Last Modified time: 2019-09-03 10:05:31
-* @E-mail: 657829956@qq.com
--->
-<!--
-* @Author: answer-zf
-* @Date:   2019-08-26 17:00:09
-* @Last Modified by:   answer-zf
-* @Last Modified time: 2019-08-29 16:42:16
+* @Last Modified time: 2019-09-30 17:21:48
 * @E-mail: 657829956@qq.com
 -->
 <!DOCTYPE html>
@@ -25,11 +18,10 @@
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>大米君--快餐有品__生活有质</title>
+    <title>食将</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <!-- bootstrap4.0 -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-icon.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -42,7 +34,7 @@
     <nav class="navbar navbar-expand-md navbar-zf fixed-top">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand d-block d-sm-none" href="#"></a>
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list">
                 <span class="navbar-toggler-icon"></span>
@@ -59,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-center" href="food.html">特色菜品</a>
                     </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link text-center zf-nav-brand" href="index.html"></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-center" href="news.html">新闻资讯</a>
                     </li>
@@ -73,159 +68,110 @@
         </div>
     </nav>
     <!-- page-banner -->
-    <section><img src="img/coop-banner.jpg" alt="" class="w-100 mt-80"></section>
-    <!-- part1 -->
-    <!-- pc -->
-    <section class="i-about py-5 bg-wP d-none d-sm-block">
-        <div class="container py-3">
-            <div class="row height-386">
-                <div class="col-md-5 position-relative">
-                    <div class="position-absolute inti-zf w-100 pt-4 i-ab-ati tran">
-                        <h4 class="ifont h2 color-m ls-2 mt-2 mb-2">米君团队更有爱</h4>
-                        <h6 class="h5 text-capitalize ls-1 color-m">Mijun team has more love</h6>
-                        <div class="line-40 my-4"></div>
-                        <span class="lh-ab ls-2 d-block mb-4">每一餐都让你津津乐道明档自助选餐 随拿随取不排队，不等待取菜马上享受，永远快人一步;从土地到餐桌，70%原材料来自大山人工现场炒制 安全、干净、卫生从出锅到摆盘 ,30分钟以内的售卖时间超时不卖,只给你最热气满满的瞬间</span>
-                        <a href="contact.html"><button class="btn bg-m color-w ls-2 mr-auto d-block">JION US</button></a>
-                    </div>
-                </div>
-                <div class="col-md-7 i-ab-img position-relative">
-                    <img src="img/coop1.jpg" class="w-100 position-absolute inti-zf tran">
-                </div>
-            </div>
-        </div>
+    <section>
+        <img src="img/coop-banner.jpg" alt="" class="w-100 mt-80">
     </section>
-    <!-- phone -->
-    <section class="i-about py-5 bg-wP d-block d-sm-none">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-7">
-                    <img src="img/coop1.jpg" class="w-100">
-                </div>                
-                <div class="col-md-5">
-                    <div class="w-100 pt-4">
-                        <h4 class="ifont h2 color-m ls-2 mt-2 mb-2">米君团队更有爱</h4>
-                        <h6 class="h5 text-capitalize ls-1 color-m">Mijun team has more love</h6>
-                        <div class="line-40 my-4"></div>
-                        <span class="lh-ab ls-2 d-block mb-4">每一餐都让你津津乐道明档自助选餐 随拿随取不排队，不等待取菜马上享受，永远快人一步;从土地到餐桌，70%原材料来自大山人工现场炒制 安全、干净、卫生从出锅到摆盘 ,30分钟以内的售卖时间超时不卖,只给你最热气满满的瞬间</span>
-                        <a href="contact.html"><button class="btn bg-m color-w ls-2 mr-auto d-block">JION US</button></a>
+    
+    <section class="origin coop_page">
+        <div class="position-relative py-5">
+            <div class="container origin_part01 py-3 position-relative z-index20">
+                <div class="row pt-1">
+                    <div class="col-md-4">
+                        <div class="p-3 bg-m">
+                            <img src="img/coop_part1-1.jpg" class="w-100">
+                            <h4 class="color-w font-weight-bold h2 text-center pt-3 sfont mb-0">微投资</h4>
+                            <img src="img/about_part1-4.png" class="mt-n4 w-100">  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-m">
+                            <img src="img/coop_part1-2.jpg" class="w-100">
+                            <h4 class="color-w font-weight-bold h2 text-center pt-3 sfont mb-0">速盈利</h4>
+                            <img src="img/about_part1-4.png" class="mt-n4 w-100">  
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-m">
+                            <img src="img/coop_part1-3.jpg" class="w-100">
+                            <h4 class="color-w font-weight-bold h2 text-center pt-3 sfont mb-0">易操作</h4>
+                            <img src="img/about_part1-4.png" class="mt-n4 w-100">  
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="bg-h w-100 position-absolute inti-zf h-100 opacity-5 z-index10"></div>
+        </div>
+        <div class="py-5 coop_part02">
+            <div class="container py-3">
+                <div class="row pb-2">
+                    <div class="col-md-12 text-center">
+                        <img src="img/cooptitle1.png" class="mw-100">
                     </div>
                 </div>
+                <div class="row pt-1">
+                    <div class="col-md-4 position-relative mb-3">
+                        <img src="img/coop_part2-1.jpg" class="w-100">
+                        <div class="p-4 bg-w ls-2 lh-16">
+                            <span>店铺经营成功与否最重要的三大因素之一是选址。成功的选址，将降低50%的风险我们将对你进行专业的选址培训，公司营建部也会通过专业评估体系远程或上门对您所选的店址进行有效评估。</span>
+                        </div>
+                        <div class="zf-c d-flex flex-column justify-content-center align-items-center wh-142">
+                            <img src="img/coop_corn2-1.png">
+                            <h6 class="mt-2 color-w">选址筹备</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative mb-3">
+                        <img src="img/coop_part2-2.jpg" class="w-100">
+                        <div class="p-4 bg-w ls-2 lh-16">
+                            <span>我们不同于同行的地方是在选址确定或不是立即进行装修，而是进行商圈调研评估因为店铺处于不同的商圈会有不同的单店定位，包括合理搭配和投资回报的顺利达成，将单店定位清晰。</span>
+                        </div>
+                        <div class="zf-c d-flex flex-column justify-content-center align-items-center wh-142">
+                            <img src="img/coop_corn2-2.png">
+                            <h6 class="mt-2 color-w">开业准备</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative mb-3">
+                        <img src="img/coop_part2-3.jpg" class="w-100">
+                        <div class="p-4 bg-w ls-2 lh-16">
+                            <span>我们的任何一个加盟店都不是从零开始的从项目的咨询、前期筹备到正常营运过程都是在公司的辅助下进行的，我们交给加盟商的每一个店都是能够正常营运的餐厅因此在后期发展中可以实现店铺连锁。</span>
+                        </div>
+                        <div class="zf-c d-flex flex-column justify-content-center align-items-center wh-142">
+                            <img src="img/coop_corn2-3.png">
+                            <h6 class="mt-2 color-w">扩展店铺</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="position-relative py-5">
+            <div class="container origin_part01 py-3 position-relative z-index20">
+                <div class="row pb-4">
+                    <div class="col-md-12 text-center">
+                        <img src="img/coop_title3.png" class="mw-100">
+                    </div>
+                </div>
+                <div class="row pt-1">
 
-            </div>
-        </div>
-    </section>
-    <!-- part1 end -->
-
-    <!-- part2 -->
-    <section class="pt-5 bg-p pb-2">
-        <div class="container py-3">
-            <div class="row pb-5">
-                <div class="col-md-12 text-center">
-                    <img src="img/coopt1.png" alt="" class="mw-100">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-1.png" class="mb-4">
-                        <h4 class="text-center mb-3">培训支持</h4>
-                        <h6 class="text-center">视频，总部，微信培训</h6>
+                    <div class="col-md-6">
+                        <div class="">
+                            <h3>只做更多消费者热爱的中餐</h3>
+                            <div class="line-40 mt-2 mb-1"></div>
+                            <h5>FAVORITE CHINESE FOOD</h5>
+                            <span class="d-block mt-2 ls-3 lh-16">吸金智囊团，抓住当下热点，着力策划当下热点品牌项目，经得住市场考验；总部提供品牌运营指导服务，成熟O2O运营体系，线上线下双渠道，无忧开店。</span>
+                            <p class="mb-1 mt-1"><em style="font-style:normal;color:#ea6753;">✔</em>&nbsp;&nbsp;专属市场分析团队，品牌资源支持</p>
+                            <p class="mb-1"><em style="font-style:normal;color:#ea6753;">✔</em>&nbsp;&nbsp;专属策划指导团队，产品研发支持</p>
+                            <p class="mb-1"><em style="font-style:normal;color:#ea6753;">✔</em>&nbsp;&nbsp;专属网络运营团队，品牌宣传支持</p>
+                            <p class="mb-1"><em style="font-style:normal;color:#ea6753;">✔</em>&nbsp;&nbsp;专属物流配送团队，后期服务支持</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-2.png" class="mb-4">
-                        <h4 class="text-center mb-3">物料支持</h4>
-                        <h6 class="text-center">产品研发，物流配送</h6>
+                    <div class="col-md-3">
+                        <img src="img/coop_part3-1.jpg" class="w-100">
                     </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-3.png" class="mb-4">
-                        <h4 class="text-center mb-3">体系支持</h4>
-                        <h6 class="text-center">管理，考核体系</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-4.png" class="mb-4">
-                        <h4 class="text-center mb-3">设计支持</h4>
-                        <h6 class="text-center">宣传单页，VI，装修设计</h6>
+                                        <div class="col-md-3">
+                        <img src="img/coop_part3-2.jpg" class="w-100">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-5.png" class="mb-4">
-                        <h4 class="text-center mb-3">市场支持</h4>
-                        <h6 class="text-center">会销，广告</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-6.png" class="mb-4">
-                        <h4 class="text-center mb-3">方案支持</h4>
-                        <h6 class="text-center">提供统一的行业解决方案</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-7.png" class="mb-4">
-                        <h4 class="text-center mb-3">技术支持</h4>
-                        <h6 class="text-center">技术专服，优先处理</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 pb-5">
-                    <div class="bg-w py-5 text-center" style="height: 270px">
-                        <img src="img/coop2-8.png" class="mb-4">
-                        <h4 class="text-center mb-3">团队支持</h4>
-                        <h6 class="text-center">团队建设，搭建咨询</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- part3 -->
-    <section class="pt-5 bg-wP origin-part3">
-        <div class="container py-3">
-            <div class="row mb-5">
-                <div class="col-md-12 text-center">
-                    <img src="img/coopt2.png" alt="" class="mx-100">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="w-100 bg-f5 text-center pb-4">
-                        <img src="img/origin3-1.png" class="w-100">
-                        <img src="img/coop3-1.png" alt="" class="py-4">
-                        <h3 class="text-center ifont color-m pb-3 mb-0 pt-2">简单开店，无需管理</h3>
-                        <span class="color-m ls-4 lh-30 px-4_5 d-block">
-                            全程保姆式指导，无需经验即可轻松开店，金牌导师全年授课，免费学习管理知识。
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="w-100 bg-f5 text-center pb-4">
-                        <img src="img/origin3-1.png" class="w-100">
-                        <img src="img/coop3-2.png" alt="" class="py-4">
-                        <h3 class="text-center ifont color-m pb-3 mb-0 pt-2">区域代理，迅速开张</h3>
-                        <span class="color-m ls-4 lh-30 px-4_5 d-block">
-                            省、地市、县级区域代理，轻松占领域市场。专业团队，成功经验简单复制，确保经营成熟有效
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="w-100 bg-f5 text-center pb-4">
-                        <img src="img/origin3-1.png" class="w-100">
-                        <img src="img/coop3-3.png" alt="" class="py-4">
-                        <h3 class="text-center ifont color-m pb-3 mb-0 pt-2">技术培训，包教包会</h3>
-                        <span class="color-m ls-4 lh-30 px-4_5 d-block">
-                            全方位系统培训及产品技术与店面管理为一体的专业人才迅速学会全部技术培训课程。
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <div class="bg-h w-100 position-absolute inti-zf h-100 opacity-5 z-index10"></div>
         </div>
     </section>
     <div id="footer-zf">
@@ -233,12 +179,10 @@
         <float-bot></float-bot>
     </div>
     <script src="js/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/2.2.2Vue.min.js"></script>
     <script src="js/zf-vue-main.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/zf.js"></script>
 </body>
 
 </html>
