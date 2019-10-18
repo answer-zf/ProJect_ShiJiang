@@ -2,7 +2,7 @@
 * @Author: answer-zf
 * @Date:   2019-08-23 08:51:01
 * @Last Modified by:   answer-zf
-* @Last Modified time: 2019-09-30 17:13:29
+* @Last Modified time: 2019-10-13 16:06:35
 * @E-mail: 657829956@qq.com
 */
 
@@ -136,6 +136,13 @@ a:hover {
     height: 80px;
     background: #354756;
     padding: 15px 0;
+    width: 1200px;
+    margin: auto;
+}
+@media(max-width: 768px){
+    .navbar-zf{
+        width: 100%;
+    }
 }
 .navbar-zf .navbar-brand {
     width: 75px;
